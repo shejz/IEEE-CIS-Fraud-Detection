@@ -3,12 +3,15 @@
 ## Competition Overview
 It was a competition to judge fraud and fraud from transaction data.
 
-## Model and LB score 
+## Model 
 **Model**: 
 
 **Evaluation Metric**: The evaluation index was AUC with imbalanced data with few isFraud = 1 data.
 
 **Training and verification**: 
+
+
+**Submission & LB score**
 
 |Model|Public score|Private score|Final rank| 
 |---|---|---|---|
