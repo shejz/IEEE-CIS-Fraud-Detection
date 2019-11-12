@@ -14,7 +14,7 @@ It was a competition to judge fraud and fraud from transaction data.
 |---|---|---|---|
 | LGBM |0.952586|0.928613|335/6,381 (Top 6%)|
 | LGBM |0.952685|0.928222| |
-| LGBM |0.9527115|0.928091| |
+| LGBM |0.952711|0.928091| |
 
 
 
