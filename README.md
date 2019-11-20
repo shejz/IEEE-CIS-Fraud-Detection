@@ -6,7 +6,7 @@ It was a competition to judge fraud and fraud from transaction data.
 ## Model 
 **Model**: 
 
-**Evaluation Metric**: The evaluation index was AUC with imbalanced data with few isFraud = 1 data.
+**Performance Metric**: The evaluation index was AUC with imbalanced data with few isFraud = 1 data.
 
 **Training and verification**: 
 
