@@ -26,6 +26,13 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 - DeviceInfo
 - id_12 - id_38
 
+## Exploratoy Data Analysis (EDA)
+- One of the first things we noticed when conducting EDA was the `sparsity of the dataset`.
+- The distribution of target variable **'isFraud'** has `class imbalance` problem where it shows that 96.5% of data contains non-fraud transaction where as only 3.5% are fraud.
+- Target variable 'isFraud' is more prevalent in the mobile **'DeviceType'** as well as more prevalent in the **'IP_PROXY:ANONYMOUS'** based on `'id_31'`.
+- Another observation that was immediately apparent is the imbalanced nature of the data. This shows that 'TransactionDT' is a timedelta gap, not a timestamp.
+- Dataset has a very high percentage of missing values, especially the V columns.
+- Anonymized columns not only had a high amount of missing data, but their distributions also were not normally distributed.
 
 ## Model 
 **Model**: 
