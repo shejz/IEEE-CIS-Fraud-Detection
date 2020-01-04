@@ -36,8 +36,8 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 
 **Missing Values**
 
-      train_identity have 35% missing values.
-      train_transaction have 41% missing values 
+  train_identity have 35% missing values.
+  train_transaction have 41% missing values 
 
 - Around 414 features contain missing values.
 - Top features containing missing values.
