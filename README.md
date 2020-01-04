@@ -34,6 +34,20 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 - Dataset has a very high percentage of missing values, especially the V columns.
 - Anonymized columns not only had a high amount of missing data, but their distributions also were not normally distributed.
 
+**Missing Values**
+
+      `train_identity` have 35% missing values.
+      `train_transaction` have 41% missing values 
+
+- Around 414 features contain missing values.
+- Top features containing missing values.
+- Remove all attributes having >90% missing ratio
+- Replace the numerical missing value with median and mean of the columns
+
+
+
+
+
 ## Model 
 **Model**: 
 
