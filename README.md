@@ -3,9 +3,29 @@
 ## Competition Overview
 The main goal is to identify whether each transaction is `fraudulent`. Among them, the `training set` sample is about **590,000** (3.5% of fraud), and the `test set` sample is about **500,000**. 
 
-The data is mainly divided into 2 categories: 
+The data is mainly divided into 2 categories which are joined by `TransactionID`. Not all transactions have corresponding identity information.
 - transaction data
 - identity data.
+
+## Data Description
+**Transaction Features**:
+- TransactionDT: timedelta from a given reference datetime (not an actual timestamp)
+- TransactionAMT: transaction payment amount in USD
+- ProductCD: product code, the product for each transaction
+- card1-card6: payment card information, such as card type, card category, issue bank, country, etc.
+- addr: address
+- dist: distance
+- P_ and (R__) emaildomain: purchaser and recipient email domain
+- C1-C14: counting, such as how many addresses are found to be associated with the payment card, etc. The actual meaning is masked.
+- D1-D15: timedelta, such as days between previous transaction, etc.
+- M1-M9: match, such as names on card and address, etc.
+- Vxxx: Vesta engineered rich features, including ranking, counting, and other entity relations.
+
+**Identity Features**:
+- DeviceType
+- DeviceInfo
+- id_12 - id_38
+
 
 ## Model 
 **Model**: 
@@ -17,11 +37,11 @@ The data is mainly divided into 2 categories:
 
 **Submission & LB score**
 
-|Model|Public score|Private score|Final rank| 
-|---|---|---|---|
-| LGBM |0.952586|0.928613| |
-| LGBM |0.952685|0.928222| |
-| LGBM |0.952711|0.928091| |
+|Model |Public score|Private score|Final rank| 
+|------|--------|--------|---|
+| LGBM |0.952586|0.928613|   |
+| LGBM |0.952685|0.928222|   |
+| LGBM |0.952711|0.928091|   |
 
 
 
