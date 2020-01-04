@@ -34,7 +34,7 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 - Dataset has a very high percentage of missing values, especially the V columns.
 - Anonymized columns not only had a high amount of missing data, but their distributions also were not normally distributed.
 
-**Missing Values Imputation**
+## Missing Values
 - Around 414 features contain missing values.
 - Top features containing missing values.
 - Drop columns with over 90% missing values
