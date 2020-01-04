@@ -1,7 +1,11 @@
 # [IEEE-CIS-Fraud-Detection](https://www.kaggle.com/c/ieee-fraud-detection)
 
 ## Competition Overview
-It was a competition to judge fraud and fraud from transaction data.
+The main goal is to identify whether each transaction is `fraudulent`. Among them, the `training set` sample is about **590,000** (3.5% of fraud), and the `test set` sample is about **500,000**. 
+
+The data is mainly divided into 2 categories: 
+- transaction data
+- identity data.
 
 ## Model 
 **Model**: 
@@ -15,7 +19,7 @@ It was a competition to judge fraud and fraud from transaction data.
 
 |Model|Public score|Private score|Final rank| 
 |---|---|---|---|
-| LGBM |0.952586|0.928613|335/6,381 (Top 6%)|
+| LGBM |0.952586|0.928613| |
 | LGBM |0.952685|0.928222| |
 | LGBM |0.952711|0.928091| |
 
