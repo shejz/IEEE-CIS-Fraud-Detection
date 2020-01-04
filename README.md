@@ -49,7 +49,7 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 **Training and verification**: 
 
 
-**Submission & LB score**
+**Submissions & Leaderboard Scores**
 
 |Model |Public score|Private score|Final rank| 
 |------|--------|--------|---|
@@ -59,7 +59,11 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 
 
 
-
+**Challenges**:
+- Sparsity of the dataset
+- A lot Missing Values
+- Imbalanced isFraud Variable
+- Outliers
 
 **The libraries used are**:  
 - numpy
