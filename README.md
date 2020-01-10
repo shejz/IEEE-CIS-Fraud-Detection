@@ -37,12 +37,14 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 ## Missing Values
 - Around 414 features contain missing values.
 - Top features containing missing values.
-- Drop columns with over 90% missing values
-- Replace the numerical missing value with the mean of the columns. If there are outliers, impute with median.
+- Impute all missing values with -999 first which is very fast and model can still find some pattern instead of losing information by dropping them.
 
 
 ## Model 
-**Model**: 
+**Model**
+- LightGBM
+- CatBosst
+- XGBoost
 
 **Performance Metric**: The evaluation index was AUC with imbalanced data with few isFraud = 1 data.
 
@@ -53,9 +55,10 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 
 |Model |Public score|Private score|Final rank| 
 |------|--------|--------|---|
-| LGBM |0.952586|0.928613|   |
-| LGBM |0.952685|0.928222|   |
-| LGBM |0.952711|0.928091|   |
+| LGBM     |0.961445|0.938790|   |
+| XGBoost  |0.959627|0.935022|   |
+| CatBoost |0.958433|0.933450|   |
+||||   |
 
 
 
