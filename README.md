@@ -58,7 +58,7 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 | LGBM     |0.961445|0.938790|   |
 | XGBoost  |0.959627|0.935022|   |
 | CatBoost |0.958433|0.933450|   |
-||||   |
+|||||
 
 
 
@@ -76,6 +76,7 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 - sklearn
 - lightgbm
 - xgboost
+- catboost
 
 
 
