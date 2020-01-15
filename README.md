@@ -19,12 +19,11 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 - C1-C14: counting, such as how many addresses are found to be associated with the payment card, etc. The actual meaning is masked.
 - D1-D15: timedelta, such as days between previous transaction, etc.
 - M1-M9: match, such as names on card and address, etc.
-- Vxxx: Vesta engineered rich features, including ranking, counting, and other entity relations.
+- Vxxx: Vesta engineered rich features, including ranking, counting, and other entity relations. Some V features are missing in different proportions.
 
 **Identity Features**:
-- DeviceType
-- DeviceInfo
-- id_12 - id_38
+- id_01 - id_11:  Numerical features for identity, which is collected by Vesta and security partners such as device rating, ip_domain rating, proxy rating, etc. Also it recorded behavioral fingerprint like account login times/failed to login times, how long an account stayed on the page, etc. 
+- DeviceType, DeviceInfo and id_12 - id_38: Categorical Features
 
 ## Exploratoy Data Analysis (EDA)
 - One of the first things we noticed when conducting EDA was the `sparsity of the dataset`.
