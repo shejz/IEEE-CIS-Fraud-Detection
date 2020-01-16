@@ -58,12 +58,10 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 | XGBoost  |0.959648|0.935475|   |
 | CatBoost |0.958168|0.932944|   |
 
-
-## Ensemble
+**Ensemble**
 |Model |Public score|Private score|Final rank| 
 |------|--------|--------|---|
 | LGBM & CatBoost |0.963440| 0.941706|  |
-
 
 
 **Challenges**:
