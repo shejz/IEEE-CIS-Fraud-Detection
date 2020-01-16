@@ -40,6 +40,11 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 - Top features containing missing values.
 - Replace NaN with a value smaller than the minimum feature value (such as -999) which is very fast and model can still find some pattern instead of losing information by dropping them.
 
+**Label Encoding**
+- Convert string, category, object type variables to integers type.
+
+**Outlier Removal**
+- Replace values with very low occurrence frequency with -9999 etc. (different from the value used for NaN replacement)
 
 ## Model 
 **Model**
