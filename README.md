@@ -22,8 +22,8 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 - **Vxxx:** Vesta engineered rich features, including ranking, counting, and other entity relations. Some V features are missing in different proportions.
 
 **Identity Features**:
-- id_01 - id_11:  Numerical features for identity, which is collected by Vesta and security partners such as device rating, ip_domain rating, proxy rating, etc. Also it recorded behavioral fingerprint like account login times/failed to login times, how long an account stayed on the page, etc. 
-- DeviceType, DeviceInfo and id_12 - id_38: Categorical Features
+- **id_01-id_11**:  Numerical features for identity, which is collected by Vesta and security partners such as device rating, ip_domain rating, proxy rating, etc. Also it recorded behavioral fingerprint like account login times/failed to login times, how long an account stayed on the page, etc. 
+- **DeviceType**, **DeviceInfo** and **id_12-id_38**: Categorical Features
 
 ## Exploratoy Data Analysis (EDA)
 - One of the first things we noticed when conducting EDA was the `sparsity of the dataset`.
@@ -57,6 +57,9 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 | LGBM     |0.961445|0.938790|   |
 | XGBoost  |0.959627|0.935022|   |
 | CatBoost |0.958433|0.933450|   |
+
+|Model |Public score|Private score|Final rank| 
+|------|--------|--------|---|
 | Ensemble |0.963487| 0.941655|  |
 
 
