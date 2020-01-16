@@ -46,6 +46,10 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 **Outlier Removal**
 - Replace values with very low occurrence frequency with -9999 etc. (different from the value used for NaN replacement)
 
+**Create a new features**
+- Generate user group by combining card and addr, aggregation
+- Convert time series data `TransactionDT` to month / week / day / time and aggregate each unit.
+
 ## Model 
 **Model**
 - LightGBM
