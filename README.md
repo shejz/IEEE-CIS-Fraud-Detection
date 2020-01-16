@@ -33,10 +33,12 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 - Dataset has a very high percentage of missing values, especially the V columns.
 - Anonymized columns not only had a high amount of missing data, but their distributions also were not normally distributed.
 
-## Missing Values
+## Feature Engineering
+
+**Missing Values**
 - Around 414 features contain missing values.
 - Top features containing missing values.
-- Impute all missing values with -999 first which is very fast and model can still find some pattern instead of losing information by dropping them.
+- Replace NaN with a value smaller than the minimum feature value (such as -999) which is very fast and model can still find some pattern instead of losing information by dropping them.
 
 
 ## Model 
