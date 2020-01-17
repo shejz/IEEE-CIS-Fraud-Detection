@@ -1,4 +1,4 @@
-# [IEEE-CIS-Fraud-Detection](https://www.kaggle.com/c/ieee-fraud-detection)
+# [IEEE-CIS Fraud Detection](https://www.kaggle.com/c/ieee-fraud-detection)
 
 ## Competition Overview
 The main goal is to identify whether each transaction is `fraudulent`. Among them, the `training set` sample is about **590,000** (3.5% of fraud), and the `test set` sample is about **500,000**. 
