@@ -1,13 +1,13 @@
 # [IEEE-CIS Fraud Detection](https://www.kaggle.com/c/ieee-fraud-detection)
 
-## Competition Overview
+##**Competition Overview**
 The main goal is to identify whether each transaction is `fraudulent`. Among them, the `training set` sample is about **590,000** (3.5% of fraud), and the `test set` sample is about **500,000**. 
 
 The data is mainly divided into 2 categories which are joined by `TransactionID`. Not all transactions have corresponding identity information.
 - transaction data
 - identity data.
 
-## Data Description
+## **Data Description**
 **Transaction Features**:
 - **TransactionDT**: Timedelta from a given reference datetime (not an actual timestamp), but the time difference in seconds from a certain time.
 - **TransactionAMT**: Transaction payment amount in USD, the decimal part is worth paying attention to.
@@ -25,7 +25,7 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 - **id_01-id_11**:  Numerical features for identity, which is collected by Vesta and security partners such as device rating, ip_domain rating, proxy rating, etc. Also it recorded behavioral fingerprint like account login times/failed to login times, how long an account stayed on the page, etc. 
 - **DeviceType**, **DeviceInfo** and **id_12-id_38**: Categorical Features
 
-## Exploratoy Data Analysis (EDA)
+##**Exploratoy Data Analysis (EDA)**
 - One of the first things we noticed when conducting EDA was the `sparsity of the dataset`.
 - The distribution of target variable **'isFraud'** has `class imbalance` problem where it shows that 96.5% of data contains non-fraud transaction where as only 3.5% are fraud.
 - Target variable 'isFraud' is more prevalent in the mobile **'DeviceType'** as well as more prevalent in the **'IP_PROXY:ANONYMOUS'** based on `'id_31'`.
@@ -33,7 +33,17 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 - Dataset has a very high percentage of missing values, especially the V columns.
 - Anonymized columns not only had a high amount of missing data, but their distributions also were not normally distributed.
 
-## Feature Engineering
+**The libraries used are**:  
+- numpy
+- pandas
+- matplotlib, 
+- seaborn
+- sklearn
+- lightgbm
+- xgboost
+- catboost
+
+##**Feature Engineering**
 
 **Missing Values**
 - Around 414 features contain missing values.
@@ -51,26 +61,24 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 - Convert time series data `TransactionDT` to month / week / day / time and aggregate each unit.
 - Extract only decimal part (cent) of `TransactionAmt`.
 
-## Model 
-**Model**
+##**Model** 
+
 - LightGBM
 - CatBosst
 - XGBoost
 
-**Performance Metric**: The evaluation index was AUC with imbalanced data with few isFraud = 1 data.
+##**Performance Metric**: The evaluation index was AUC with imbalanced data with few isFraud = 1 data.
 
-**Training and verification**: 
-
-
-**Submissions & Leaderboard Scores**
+##**Submissions & Leaderboard Scores**
 
 |Model |Public score|Private score|Final rank| 
 |------|--------|--------|---|
 | LGBM     |0.961445|0.938790| Silver merdal 🥈   |
-| LGBM v.2 |0.952711|0.928091| Top 12% 711/6381    |  I made a wrong selection of LGBM for my final submission. I lost medal a medal.   
+| LGBM v.2 |0.952711|0.928091| Top 12% 711/6381    |    
 | XGBoost  |0.959648|0.935475| Silver merdal 🥈   |
 | CatBoost |0.958168|0.932944| Silver merdal 🥈   |
-                  
+
+
 
 **Ensemble**
 
@@ -85,15 +93,8 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 - Imbalanced isFraud Variable
 - Outliers
 
-**The libraries used are**:  
-- numpy
-- pandas
-- matplotlib, 
-- seaborn
-- sklearn
-- lightgbm
-- xgboost
-- catboost
+**I made a wrong selection of LGBM for my final submission. I lost medal for this competion**
+
 
 
 
