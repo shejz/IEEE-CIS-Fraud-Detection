@@ -67,7 +67,7 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 |Model |Public score|Private score|Final rank| 
 |------|--------|--------|---|
 | LGBM     |0.961445|0.938790| Silver merdal 🥈   |
-| LGBM v.2 |0.952711|0.928091| Top 12% 711/6381    |  # I lost my medal 
+| LGBM v.2 |0.952711|0.928091| Top 12% 711/6381    |  I made a wrong selection of LGBM for my final submission. I lost medal a medal.   
 | XGBoost  |0.959648|0.935475| Silver merdal 🥈   |
 | CatBoost |0.958168|0.932944| Silver merdal 🥈   |
                   
