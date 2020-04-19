@@ -1,6 +1,6 @@
 # [IEEE-CIS Fraud Detection](https://www.kaggle.com/c/ieee-fraud-detection)
 
-##**Competition Overview**
+## **Competition Overview**
 The main goal is to identify whether each transaction is `fraudulent`. Among them, the `training set` sample is about **590,000** (3.5% of fraud), and the `test set` sample is about **500,000**. 
 
 The data is mainly divided into 2 categories which are joined by `TransactionID`. Not all transactions have corresponding identity information.
@@ -25,7 +25,7 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 - **id_01-id_11**:  Numerical features for identity, which is collected by Vesta and security partners such as device rating, ip_domain rating, proxy rating, etc. Also it recorded behavioral fingerprint like account login times/failed to login times, how long an account stayed on the page, etc. 
 - **DeviceType**, **DeviceInfo** and **id_12-id_38**: Categorical Features
 
-##**Exploratoy Data Analysis (EDA)**
+## **Exploratoy Data Analysis (EDA)**
 - One of the first things we noticed when conducting EDA was the `sparsity of the dataset`.
 - The distribution of target variable **'isFraud'** has `class imbalance` problem where it shows that 96.5% of data contains non-fraud transaction where as only 3.5% are fraud.
 - Target variable 'isFraud' is more prevalent in the mobile **'DeviceType'** as well as more prevalent in the **'IP_PROXY:ANONYMOUS'** based on `'id_31'`.
@@ -43,7 +43,7 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 - xgboost
 - catboost
 
-##**Feature Engineering**
+## **Feature Engineering**
 
 **Missing Values**
 - Around 414 features contain missing values.
@@ -61,15 +61,15 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 - Convert time series data `TransactionDT` to month / week / day / time and aggregate each unit.
 - Extract only decimal part (cent) of `TransactionAmt`.
 
-##**Model** 
+## **Model** 
 
 - LightGBM
 - CatBosst
 - XGBoost
 
-##**Performance Metric**: The evaluation index was AUC with imbalanced data with few isFraud = 1 data.
+## **Performance Metric**: The evaluation index was AUC with imbalanced data with few isFraud = 1 data.
 
-##**Submissions & Leaderboard Scores**
+## **Submissions & Leaderboard Scores**
 
 |Model |Public score|Private score|Final rank| 
 |------|--------|--------|---|
