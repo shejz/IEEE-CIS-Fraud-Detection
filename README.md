@@ -67,7 +67,8 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 - CatBosst
 - XGBoost
 
-## **Performance Metric**: The evaluation index was AUC with imbalanced data with few isFraud = 1 data.
+## **Performance Metric**
+- The evaluation index was AUC with imbalanced data with few isFraud = 1 data.
 
 ## **Submissions & Leaderboard Scores**
 
@@ -78,14 +79,11 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 | XGBoost  |0.959648|0.935475| Silver merdal 🥈   |
 | CatBoost |0.958168|0.932944| Silver merdal 🥈   |
 
-
-
 **Ensemble**
 
 |Model |Public score|Private score|Final rank| 
 |-----------------|--------|---------|-------|
 | 0.8*LGBM + 0.2*catboost |0.963440| 0.941706|   Gold medal 🥇    |
-
 
 **Challenges**:
 - Sparsity of the dataset
@@ -94,7 +92,3 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 - Outliers
 
 **I made a wrong selection of LGBM for my final submission. I lost medal for this competion**
-
-
-
-
