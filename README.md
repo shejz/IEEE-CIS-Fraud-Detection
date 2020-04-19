@@ -75,7 +75,7 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 |Model |Public score|Private score|Final rank| 
 |------|--------|--------|---|
 | LGBM     |0.961445|0.938790| Silver merdal 🥈   |
-| LGBM v.2 |0.952711|0.928091| ([Top 12%](https://www.kaggle.com/shielaj/competitions))711/6381   |    
+| LGBM v.2 |0.952711|0.928091| [Top 12%](https://www.kaggle.com/shielaj/competitions)  711/6381   |    
 | XGBoost  |0.959648|0.935475| Silver merdal 🥈   |
 | CatBoost |0.958168|0.932944| Silver merdal 🥈   |
 
