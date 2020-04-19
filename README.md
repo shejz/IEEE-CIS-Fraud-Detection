@@ -91,4 +91,4 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 - Imbalanced isFraud Variable
 - Outliers
 
-**I made a wrong selection of LGBM for my final submission. I lost medal for this competion**
+**I made a wrong selection of LGBM for my final submission. I lost a medal for this competion.**
