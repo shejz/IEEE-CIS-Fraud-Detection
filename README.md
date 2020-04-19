@@ -74,7 +74,7 @@ The data is mainly divided into 2 categories which are joined by `TransactionID`
 
 |Model |Public score|Private score|Final rank| 
 |-----------------|--------|---------|-------|
-| 0.8*LGBM + 0.2*catboost |0.963440| 0.941706|       |
+| 0.8*LGBM + 0.2*catboost |0.963440| 0.941706|   Gold medal 🥇    |
 
 
 **Challenges**:
